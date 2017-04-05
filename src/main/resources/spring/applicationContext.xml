@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+
+    <import resource="classpath*:spring/spring-mybatis.xml" />
+
+
+    <mvc:default-servlet-handler />
+
+    <context:component-scan base-package="xyz.fefine.ssm.service"/>
+
+
+
+<!--    <mvc:resources location="/WEB-INF/css/" mapping="/css/**"/>
+    <mvc:resources location="/WEB-INF/js/" mapping="/js/**"/>
+    <mvc:resources location="/WEB-INF/img/" mapping="/img/**"/>-->
+
+<!--    <mvc:interceptors>
+        &lt;!&ndash; 配置自定义注解 &ndash;&gt;
+        <bean class="com.em.auth.AuthInterceptor">
+        </bean>
+    </mvc:interceptors>-->
+
+</beans>
